@@ -1,9 +1,10 @@
 package com.example.schedules.dto;
 
 import com.example.schedules.entity.Schedules;
+import lombok.Getter;
 
 import java.time.LocalDateTime;
-
+@Getter
 public class SchedulesResponseDto {
     private int id;
 
@@ -19,6 +20,7 @@ public class SchedulesResponseDto {
 
 
     //
+
     public SchedulesResponseDto(Schedules schedules){
         this.id = schedules.getId();
         this.to_do = schedules.getTo_do();

@@ -21,10 +21,10 @@ public class SchedulesController {
         this.schedulesService = schedulesService;
     }
     //기능
-//    @GetMapping("/hello")
-//    public String helloApi(){
-//        return "ggg";
-//    }
+    @GetMapping("/hello")
+    public String helloApi(){
+        return "ggg";
+    }
 
     @PostMapping
     public ResponseEntity<SchedulesResponseDto>createSchedule(@RequestBody SchedulesRequestDto schedulesRequestDto){
